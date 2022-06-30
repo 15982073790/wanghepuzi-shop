@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="container gray-bg">
+
+  <!-- 轮播图 start -->
+  <view wx:if="{{banner_goods.length}}"  class="banner page-section page-section-spacing swiper">
+    <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" circular="{{true}}">
+      <navigator wx:for="{{banner_goods}}" wx:key="index" url="/pages/content/content?d={{item.goods_id}}">
+        <swiper-item>
+          <image src="{{item.banner_img}}" mode="widthFix"/>
+        </swiper-item>
+      </navigator>
+    </swiper>
+  </view>
+  <!-- 轮播图 end -->
+
+  <view wx:if="{{quality_goods.length}}" class="title-box" >
+    <text>热门推荐</text>
+  </view>
+
+  <!-- 推荐 start -->
+  <view wx:if="{{quality_goods.length}}" class="recommend-box">
+    <navigator class="goods-item" wx:for="{{quality_goods}}" wx:key="index" url="/pages/content/content?d={{item.goods_id}}">
+      <image class="goods-img" src="{{item.banner_img}}" mode="widthFix"/>
+      <view class="goods-tit">{{item.goods_name}}</view>
+      <view class="goods-bt">
+        <view>
+          <text class="z">¥{{item.goods_price}}</text>
+          <text class="y">¥{{item.goods_original_price}}</text>
+        </view>
+        <view class="purchase">{{item.fake_buy_num}}人购买</view>
+      </view>
+    </navigator>
+  </view>
+  <!-- 推荐 end -->
+
+  <view class="title-box">
+    <text>精选好物</text>
+  </view>
+
+  <!-- 精选好物 start -->
+  <view class="recommend-box">
+    <van-row gutter="20">
+      <van-col span="12" wx:for="{{common_goods}}" wx:key="index">
+        <navigator url="/pages/content/content?d={{item.goods_id}}" class="best-item">
+          <image class="best-img" src="{{item.cover_img}}" mode="widthFix" />
+          <view class="best-tit">{{item.goods_name}}</view>
+          <view class="best-bt">
+            <text class="z">¥{{item.goods_price}}</text>
+            <text class="purchase">¥{{item.goods_original_price}}</text>
+          </view>
+        </navigator>
+      </van-col>
+    </van-row>
+  </view>
+  <!-- 精选好物 end -->
+
+  <van-toast id="van-toast" />
+  <view class='goTop' wx:if='{{floorstatus}}' bindtap="goTop">
+    <van-icon name="arrow-up" />
+  </view>
+</view>

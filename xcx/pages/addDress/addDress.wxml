@@ -1,0 +1,54 @@
+<!--pages/addDress/addDress.wxml-->
+<!--pages/address/address.wxml-->
+<view class="container gray-bg add-dress-container">
+  <van-cell-group>
+    <van-field
+      value="{{ username }}"
+      label="收货人"
+      placeholder="请输入收货人"
+      data-k="username"
+      bind:change="onChange"
+    />
+    <van-field
+      value="{{ phone }}"
+      label="联系电话"
+      data-k="phone"
+      placeholder="请输入联系电话"
+      bind:change="onChange"
+    />
+    <van-field
+      value="{{ areaFull }}"
+      label="所在地区"
+      readonly
+      placeholder="请选择所在地区"
+      bindtap="showArea"
+    />
+    <van-field
+      value="{{ address }}"
+      label="详细地址"
+      placeholder="请输入详细地址"
+      data-k="address"
+      bind:change="onChange"
+    />
+    <van-cell title="设置默认地址">
+      <van-switch  checked="{{ isDefault }}" size="20px" bind:change="defaultChange" />
+    </van-cell>
+  </van-cell-group>
+  <view class="gray-line" />
+  <!-- <van-cell>
+    <text slot="title" class="delete">删除该地址</text>
+  </van-cell> -->
+  <view>
+    <van-button round block type="info" color="#40a9ff" class="btn-add" bindtap="addAddress">提 交</van-button>
+  </view>
+  <van-popup
+    show="{{ show }}"
+    position="bottom"
+    columns-placeholder="{{ ['请选择', '请选择', '请选择'] }}"
+    custom-style="height: 200px"
+    bind:close="onClose"
+  >
+    <van-area area-list="{{ areaList }}" bind:confirm="handleConfirm" bind:cancel="handleCancel"/>
+  </van-popup>
+  <van-toast id="van-toast" />
+</view>

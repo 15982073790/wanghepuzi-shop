@@ -1,0 +1,24 @@
+{
+    "name":             "MrstockCloud/Sdk",
+    "description":      "Sdk",
+    "keywords":         ["MrstockCloud,Sdk"],
+    "homepage":         "http://www.guxiansheng.cn/",
+	"type": 			"library",
+    "license":          "MIT",
+    "version":          "v1.0",
+    "authors": [
+        {
+            "name":         "",
+            "email":        "",
+            "role":         ""
+        }
+    ],
+    "require": {
+        "nategood/httpful": "*"
+    },
+    "autoload" : {
+        "psr-4": {
+            "MrstockCloud\\": "src"
+        }
+    }
+}

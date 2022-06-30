@@ -1,0 +1,77 @@
+{
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/walkor/GatewayWorker"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/system/mjc"
+    },
+    {
+      "type": "git",
+      "url": "hhttps:github.com/15982073790/lib/mrstock/system/helper"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/system/redis"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/system/orm"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/system/queue"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/business/servicesdk"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/business/middleware"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/cloud/php/client"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/cloud/php/sdk"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/cloud/php/cxtsdk"
+    },
+    {
+      "type": "git",
+      "url": "https:github.com/15982073790/lib/mrstock/cloud/php/cxtclient"
+    }
+  ],
+  "require": {
+    "workerman/gateway-worker": "v3.0.12",
+    "mrstock/system/mjc": "dev-master",
+    "mrstock/system/helper": "dev-master",
+    "mrstock/system/redis": "dev-master",
+    "mrstock/system/orm": "dev-master",
+    "mrstock/system/queue": "dev-master",
+    "mrstock/business/servicesdk": "dev-master",
+    "mrstock/business/middleware": "dev-master",
+    "tecnickcom/tcpdf": "^6.2",
+    "jpush/jpush": "^3.5",
+    "phpoffice/phpexcel": "^1.8",
+    "alibabacloud/sdk": "^1.0",
+    "MrstockCloud/Client": "dev-master",
+    "MrstockCloud/Sdk": "dev-master",
+    "php-amqplib/php-amqplib": "2.5.*",
+    "aliyuncs/oss-sdk-php": "~2.0",
+    "elasticsearch/elasticsearch": "^6.7",
+    "vlucas/phpdotenv": "^3.5",
+    "phpunit/phpunit": "8.0",
+    "qiniu/php-sdk": "^7.2",
+    "CxtCloud/Sdk": "dev-master",
+    "CxtCloud/Client": "dev-master",
+    "workerman/gatewayclient": "^3.0"
+  }
+}

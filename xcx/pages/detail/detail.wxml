@@ -1,0 +1,67 @@
+<view class="container detail-container gray-bg">
+  <wxs module="filter" src="../../utils/filter.wxs" />
+  <view class="status-box" wx:if="{{orderInfo.order_status === '-1'}}"><van-icon name="close" /><text>已取消</text></view>
+  <view class="status-box" wx:if="{{orderInfo.order_status === '-2'}}"><van-icon name="warning-o" /><text>已删除</text></view>
+  <view class="status-box" wx:if="{{orderInfo.order_status === '-3'}}"><van-icon name="underway-o" /><text>退款中</text></view>
+  <view class="status-box" wx:if="{{orderInfo.order_status === '1' && orderInfo.expire_status === '1'}}"><van-icon name="pending-payment" /><text>待付款</text></view>
+  <view class="status-box" wx:if="{{orderInfo.order_status === '1' && orderInfo.expire_status === '2'}}"><van-icon name="pending-payment" /><text>超时未支付</text></view>
+  <view class="status-box" wx:if="{{orderInfo.order_status === '2'}}"><van-icon name="send-gift-o" /><text>待发货</text></view>
+  <view class="status-box" wx:if="{{orderInfo.order_status === '4'}}"><van-icon name="logistics" /><text>待收货</text></view>
+  <view class="status-box" wx:if="{{orderInfo.order_status === '5'}}"><van-icon name="sign" /><text>交易成功</text></view>
+  <view class="status-box" wx:if="{{orderInfo.order_status === '3'}}"><van-icon name="cash-back-record" /><text>已退款</text></view>
+  <view class="address-box">
+    <view class="location">
+      <image src="../../assets/loc.png" mode="widthFix"/>
+    </view>
+    <view>
+      <view class="username"><text>{{userName}}</text>{{userTel}}</view>
+      <view class="info">{{address}}</view>
+    </view>
+  </view>
+  <view class="goods">
+    <view class="goods-item" wx:for="{{orderInfo.order_goods}}" wx:for-item="goodItem" wx:key="index">
+      <view class="goods-img">
+        <image src="{{goodItem.cover_img}}" mode="widthFix"/>
+      </view>
+      <view class="goods-tit">
+        <view class="title">{{goodItem.goods_name}}</view>
+        <view class="desc">型号：{{goodItem.model}} 规格：{{goodItem.specification}}</view>
+        <view class="price">
+          <text class="l">¥{{goodItem.goods_price}}</text>
+          <text>X{{goodItem.goods_count}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="other-item">
+      <text class="lef">商品总额</text>
+      <text class="rig">¥{{orderInfo.total_goods_price}}</text>
+    </view>
+    <view class="other-item">
+      <text class="lef">抵扣总额</text>
+      <text class="rig red">-¥{{orderInfo.total_coupon_price}}</text>
+    </view>
+    <view class="other-item">
+      <text class="lef">运费</text>
+      <text class="rig">¥{{orderInfo.total_area_price}}</text>
+    </view>
+    <view class="other-item">
+      <text class="lef">实付款</text>
+      <text class="rig red">¥{{orderInfo.total_pay_money}}</text>
+    </view>
+  </view>
+  <view class="time-box">
+    <view>订单编号：{{orderInfo.order_sn}} <text data-text="{{orderInfo.order_sn}}" bindtap='copyText'>复制</text></view>
+    <view>下单时间：{{filter.getDate(orderInfo.itime)}}</view>
+  </view>
+  <view class="btn" wx:if="{{orderInfo.order_status === '1' || orderInfo.order_status === '2' || orderInfo.order_status === '3' || orderInfo.order_status === '4' || orderInfo.order_status === '5' || orderInfo.order_status === '-1'}}">
+    <van-button wx:if="{{orderInfo.order_status === '1' && orderInfo.expire_status === '1'}}" size="small" round type="default" class="lef" bindtap="cancelOrder">取消订单</van-button>
+    <van-button wx:if="{{orderInfo.order_status === '5' || orderInfo.order_status === '3' || orderInfo.order_status === '-1' || (orderInfo.order_status === '1' && orderInfo.expire_status === '2')}}" size="small" round type="default" class="lef" bindtap="deleteOrder">删除订单</van-button>
+    <van-button wx:if="{{orderInfo.order_status === '4'}}" size="small" round type="default" class="lef" bindtap="viewLogis">查看物流</van-button>
+    <van-button wx:if="{{orderInfo.order_status === '4'}}" size="small" round type="primary" color="#FF3200" bindtap="confirmOrder">确认收货</van-button>
+    <van-button wx:if="{{orderInfo.order_status === '1' && orderInfo.expire_status === '1'}}" size="small" round type="primary" color="#FF3200" bindtap="pay">立即支付</van-button>
+    <van-button wx:if="{{orderInfo.order_status === '2'}}" size="small" round type="primary" color="#FF3200" bindtap="postTui">申请退款</van-button>
+  </view>
+  <!-- 提示 -->
+  <van-dialog id="van-dialog" />
+  <van-toast id="van-toast" />
+</view>

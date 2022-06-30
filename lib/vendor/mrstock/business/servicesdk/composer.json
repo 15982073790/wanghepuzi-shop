@@ -1,0 +1,24 @@
+{
+    "name":             "mrstock/business/servicesdk",
+    "description":      "servicesdk",
+    "keywords":         ["business,base"],
+    "homepage":         "http://www.guxiansheng.cn/",
+	"type": 			"library",
+    "license":          "MIT",
+    "version":          "v1.0",
+    "authors": [
+        {
+            "name":         "",
+            "email":        "",
+            "role":         ""
+        }
+    ],
+    "require": {
+        "nategood/httpful": "*"
+    },
+    "autoload" : {
+        "psr-4": {
+            "MrStock\\Business\\ServiceSdk\\": "src"
+        }
+    }
+}

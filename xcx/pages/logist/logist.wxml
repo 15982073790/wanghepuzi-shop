@@ -1,0 +1,31 @@
+<view class="container logist-container gray-bg">
+  <view class="top-box">
+    <!-- <view>物流状态: <text>已签收</text></view> -->
+    <view>快递公司: 
+      <text wx:if="{{shipper==='ems'}}">EMS</text>
+      <text wx:if="{{shipper==='zhongtongkuaiyun'}}">中通快运</text>
+      <text wx:if="{{shipper==='shunfeng'}}">顺丰速运</text>
+      <text wx:if="{{shipper==='shunfengkuaiyun'}}">顺丰快运</text>
+      <text wx:if="{{shipper==='debangwuliu'}}">德邦物流</text>
+      <text wx:if="{{shipper==='kuayue'}}">跨越速运</text>
+      <text wx:if="{{shipper==='zhongtong'}}">中通快递</text>
+      <text wx:if="{{shipper==='yundakuaiyun'}}">韵达快运</text>
+      <text wx:if="{{shipper==='yunda'}}">韵达快递</text>
+      <text wx:if="{{shipper==='jd'}}">京东物流</text>
+      <text wx:if="{{shipper==='other'}}">专线配送</text>
+    </view>
+    <view>快递单号: {{code}}<text class="fu"  data-text="{{code}}" bindtap='copyText'>复制</text></view>
+  </view>
+  <view wx:if="{{shipper!=='other'}}" class="logist-box">
+    <van-steps
+      steps="{{ steps }}"
+      active="{{ active }}"
+      direction="vertical"
+      active-color="#40a9ff"
+      inactive-color="#666666"
+      active-icon="passed"
+      inactive-icon="underway-o"
+    />
+  </view>
+  <van-toast id="van-toast" />
+</view>

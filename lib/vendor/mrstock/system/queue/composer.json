@@ -1,0 +1,24 @@
+{
+    "name":             "mrstock/system/queue",
+    "description":      "queue",
+    "keywords":         ["queue"],
+    "homepage":         "http://www.guxiansheng.cn/",
+	"type": 			"library",
+    "license":          "MIT",
+    "version":          "v1.0",
+    "authors": [
+        {
+            "name":         "",
+            "email":        "",
+            "role":         ""
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload" : {
+        "psr-4": {
+            "MrStock\\System\\Queue\\": "src"
+        }
+    }
+}

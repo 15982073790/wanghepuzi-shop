@@ -1,0 +1,15 @@
+<?php
+
+namespace CxtCloud\{NAMESPACE};
+
+use CxtCloud\Client\Traits\ControlResolverTrait;
+
+/**
+ * Resolve Api based on the method name.
+ *
+{METHODS}
+ */
+class ControlResolver
+{
+    use ControlResolverTrait;
+}

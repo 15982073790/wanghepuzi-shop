@@ -1,0 +1,21 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 360rpx 50rpx 0;
+  background-color: #fff;
+  position: relative;
+}
+.login-container .form .van-cell {
+  color: #333;
+  padding: 0 46rpx;
+  height: 92rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100rpx;
+  border-radius: 46rpx;
+  background-color: #f6f6f6;
+}
+.login-container .form button {
+  width: 100%;
+  box-shadow: 0 0 12rpx rgba(70, 123, 253, 0.58);
+}

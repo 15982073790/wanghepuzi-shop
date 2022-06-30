@@ -1,0 +1,24 @@
+{
+    "name":             "mrstock/system/redis",
+    "description":      "redis",
+    "keywords":         ["redis"],
+    "homepage":         "http://www.guxiansheng.cn/",
+	"type": 			"library",
+    "license":          "MIT",
+    "version":          "v1.0",
+    "authors": [
+        {
+            "name":         "12",
+            "email":        "22@11.c",
+            "role":         "aa"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload" : {
+        "psr-4": {
+			"MrStock\\System\\Redis\\": "src/"
+        }
+    }
+}

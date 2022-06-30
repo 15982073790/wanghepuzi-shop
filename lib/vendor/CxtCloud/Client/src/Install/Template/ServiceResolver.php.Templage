@@ -1,0 +1,22 @@
+<?php
+
+namespace CxtCloud;
+
+use CxtCloud\Client\CxtCloud;
+use CxtCloud\Client\Traits\ServiceResolverTrait;
+
+/**
+ * Find service based on the static method name as service name.
+ *
+ * @package   CxtCloud
+ *
+ * @mixin     CxtCloud
+ *
+ * @codeCoverageIgnore
+ *
+{METHODS}
+ */
+class ServiceResolver
+{
+    use ServiceResolverTrait;
+}

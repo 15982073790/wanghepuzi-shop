@@ -1,0 +1,72 @@
+<!--pages/mine/mine.wxml-->
+<view class="container gray-bg">
+  <wxs module="filter" src="../../utils/filter.wxs" />
+  <!-- 头像 start -->
+  <view class="user-box">
+    <view class="avater" >
+      <image src="{{userInfo.wx_avatar}}" mode="widthFix" />
+    </view>
+    <view class="title">
+      <navigator url="/pages/login/login" wx:if="{{userInfo}}" class="login-text">您还未登录，快去登录吧</navigator>
+      <view wx:else class="username">{{userInfo.wx_name}}</view>
+      <view class="desc">抵扣余额 ¥{{userInfo.coupon_money}} <text wx:if="{{userInfo.is_expire===1}}">| {{filter.getDateDay(userInfo.expire_time)}}到期</text></view>
+    </view>
+  </view>
+  <!-- 头像 end -->
+
+  <!-- 订单 start -->
+  <view class="order-box">
+    <view class="tp">
+      <text class="title">我的订单</text>
+      <view bindtap="goOrderList" data-t='0' class="more">全部订单 ></view>
+    </view>
+    <view class="bt-box">
+      <view class="order-item" data-t='1' bindtap="goOrderList">
+        <view class="order-icon"><van-icon name="pending-payment" /></view>
+        <view class="order-text">待付款</view>
+        <view class="unread" wx:if="{{wait_pay_num>0}}">{{wait_pay_num}}</view>
+      </view>
+      <view class="order-item" data-t='2' bindtap="goOrderList">
+        <view class="order-icon"><van-icon name="send-gift-o" /></view>
+        <view class="order-text">待发货</view>
+        <view class="unread" wx:if="{{complete_pay_num>0}}">{{complete_pay_num}}</view>
+      </view>
+      <view class="order-item" data-t='4' bindtap="goOrderList">
+        <view class="order-icon"><van-icon name="logistics" /></view>
+        <view class="order-text">待收货</view>
+        <view class="unread" wx:if="{{send_goods_num>0}}">{{send_goods_num}}</view>
+      </view>
+      <view class="order-item" data-t='5' bindtap="goOrderList">
+        <view class="order-icon"><van-icon name="sign" /></view>
+        <view class="order-text">已完成</view>
+        <view class="unread" wx:if="{{complete_goods_num>0}}">{{complete_goods_num}}</view>
+      </view>
+      <view class="order-item" data-t='3' bindtap="goOrderList">
+        <view class="order-icon"><van-icon name="cash-back-record" /></view>
+        <view class="order-text">已退款</view>
+        <view class="unread" wx:if="{{complete_refund_num>0}}">{{complete_refund_num}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 订单 end -->
+
+  <!-- 服务 start -->
+  <view class="order-box service-box">
+    <view class="tp">
+      <text class="title">我的服务</text>
+    </view>
+    <view class="bt-box">
+      <button class="order-item button-item" open-type="contact">
+        <view class="order-icon service-icon"><van-icon name="service-o" /></view>
+        <view class="order-text">专属客服</view>
+      </button>
+      <view class="order-item" bindtap="toAddress">
+        <view class="order-icon"><van-icon name="location-o" /></view>
+        <view class="order-text">收货地址</view>
+      </view>
+    </view>
+    <!-- 服务 end -->
+  </view>
+
+  <van-toast id="van-toast" />
+</view>

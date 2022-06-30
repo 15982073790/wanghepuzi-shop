@@ -1,0 +1,28 @@
+<!--pages/address/address.wxml-->
+<view class="container gray-bg address-container">
+  <view class="no-data-box" wx:if="{{list.length === 0}}">
+    <image src="../../assets/no-data.png" class="no-img" mode="widthFix"/>
+    <view class="tips">还没有地址奥，快去添加吧~</view>
+  </view>
+  <view wx:else class="main-box">
+    <van-swipe-cell right-width="{{ 65 }}" wx:for="{{list}}" wx:key="index" async-close bind:close="delete" data-id="{{item.address_id}}">
+      <van-cell-group>
+        <view class="item">
+          <view class="left" data-id="{{item.address_id}}" bindtap="selectAddress">
+            <view class="user"><text>{{item.true_name}}</text>{{item.address_tel}} <van-tag wx:if="{{item.address_default === '2'}}" plain type="danger">默认</van-tag></view>
+            <view class="info">{{item.province_name}}{{item.city_name}}{{item.county_name}}{{item.detail_address}}</view>
+          </view>
+          <view class="right" bindtap="edit" data-id="{{item.address_id}}">
+            <van-icon name="edit" />
+          </view>
+        </view>
+      </van-cell-group>
+      <view class="delete" slot="right">删除</view>
+    </van-swipe-cell>
+  </view>
+  <view class="btn-bottom">
+    <van-button round block type="info" color="#40a9ff" class="btn-add" bindtap="toAdd">+ 新增收货地址</van-button>
+  </view>
+  <van-dialog id="van-dialog" />
+  <van-toast id="van-toast" />
+</view>

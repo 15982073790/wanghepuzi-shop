@@ -1,0 +1,27 @@
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.home-container image {
+  width: 100%;
+}
+.home-container .bottom-btn {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 120rpx;
+}
+.home-container .bottom-btn .btn {
+  display: inline-block;
+  width: 256rpx;
+  height: 72rpx;
+  text-align: center;
+  line-height: 72rpx;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 26rpx;
+  border-radius: 48rpx;
+}

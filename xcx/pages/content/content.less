@@ -1,0 +1,92 @@
+.content-container{
+  .swiper{
+    height: 860rpx;
+    .wx-swiper-dot{
+      bottom: 200rpx;
+    }
+  }
+  .goods-image{
+    width: 750rpx;
+    height: auto;
+  }
+  .main{
+    position: relative;
+    top: -80rpx;
+    padding-bottom: 20rpx;
+    .goods-info{
+      padding: 30rpx;
+      background-color: #fff;
+      border-top-left-radius: 40rpx;
+      border-top-right-radius: 40rpx;
+      .top{
+        display: flex;
+        justify-content: space-between;
+        line-height: 70rpx;
+        .price{
+          color: #FF3200;
+          font-size: 32rpx;
+          text{
+            color: #CBCACA;
+            font-size: 24rpx;
+            text-decoration:line-through;
+            padding-left: 20rpx;
+          }
+        }
+        .purchase{
+          color: #AEAEAE;
+          font-size: 26rpx;
+        }
+      }
+      .title{
+        color: #333;
+        font-size: 30rpx;
+        height: 74rpx;
+        line-height: 37rpx;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .desc{
+        margin-top: 10rpx;
+        color: #666;
+        font-size: 26rpx;
+      }
+      .number-box{
+        margin-top: 20rpx;
+        display: flex;
+        justify-content: space-between;
+        text{
+          font-size: 24rpx;
+          line-height: 60rpx;
+          color: #666;
+        }
+      }
+    }
+    .desc-tit{
+      height: 110rpx;
+      line-height: 110rpx;
+      background-color: #fff;
+      margin-top: 20rpx;
+      padding: 0 30rpx;
+      text{
+        display: inline-block;
+        height: 28rpx;
+        width: 6rpx;
+        border-radius: 2rpx;
+        background-color: #FF3200;
+        margin-right: 12rpx;
+      }
+    }
+    .info{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .info-image{
+        width: 750rpx;
+        height: auto;
+      }
+    }
+  }
+}

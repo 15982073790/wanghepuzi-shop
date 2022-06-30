@@ -1,0 +1,40 @@
+<!--pages/content/content.wxml-->
+<view class="gray-bg content-container">
+  <view class="banner page-section page-section-spacing swiper">
+    <swiper class="swiper" indicator-dots="{{true}}" interval="{{3000}}" autoplay="{{true}}" circular="{{true}}">
+      <swiper-item wx:for="{{detail_top_img}}" wx:key="index">
+        <image class="goods-image" src="{{item}}" mode="widthFix"/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="main">
+    <view class="goods-info">
+      <view class="top">
+        <view class="price">¥{{goodInfo.goods_price}}<text>{{goodInfo.goods_original_price}}</text></view>
+        <view class="purchase">{{goodInfo.fake_buy_num}}人付款</view>
+      </view>
+      <view class="title">{{goodInfo.goods_name}}</view>
+      <view class="desc">型号：{{goodInfo.model}} 规格：{{goodInfo.specification}}</view>
+      <view class="desc">{{goodInfo.goods_describe}}</view>
+      <view class="number-box">
+        <text>购买数量</text>
+        <van-stepper value="{{ number }}" min="{{ minBuyNum }}" max="{{goodInfo.repertory_num}}" bind:change="onChangeNum" />
+      </view>
+    </view>
+    <view class="desc-tit"><text />商品详情</view>
+    <view class="info">
+      <image wx:for="{{detail_img}}" wx:key="index" class="info-image" src="{{item}}" mode="widthFix"/>
+    </view>
+  </view>
+  <van-goods-action>
+    <van-goods-action-icon icon="chat-o" open-type="contact" text="客服" />
+    <van-goods-action-icon icon="cart-o" text="购物车" bindtap="goCart"/>
+    <van-goods-action-button
+      text="加入购物车"
+      type="warning"
+      bind:click="addCart"
+    />
+    <van-goods-action-button text="立即购买" bind:click="goPurchase" />
+  </van-goods-action>
+  <van-toast id="van-toast" />
+</view>

@@ -1,0 +1,106 @@
+/* pages/mine/mine.wxss */
+.user-box{
+    padding: 36rpx 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user-box .avater image{
+    width: 116rpx;
+    height: 116rpx;
+    border-radius: 58rpx;
+    background-color: #fff;
+}
+.user-box .title{
+    padding: 18rpx 0 0 22rpx;
+}
+.user-box .title .username{
+    font-size: 36rpx;
+    color: #333;
+}
+.user-box .title .login-text{
+    font-size: 26rpx;
+    color: #333;
+}
+.user-box .title .desc{
+    font-size: 24rpx;
+    color: #666;
+    padding-top: 12rpx;
+}
+
+.order-box{
+    width: 100%;
+    background-color: #fff;
+    padding: 32rpx 28rpx;
+    border-radius: 16rpx;
+}
+.order-box .tp{
+    display: flex;
+    line-height: 60rpx; 
+    justify-content: space-between;
+}
+
+.order-box .tp .title{
+    font-size: 34rpx;
+    color: #333;
+}
+
+.order-box .tp .more{
+    font-size: 26rpx;
+    color: #999;
+}
+.bt-box{
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.order-item{
+    position: relative;
+    width: 130rpx;
+    height: 136rpx;
+}
+.order-item .unread {
+  position: absolute;
+  top: -10rpx;
+  right: 20%;
+  width: 36rpx;
+  height: 36rpx;
+  text-align: center;
+  line-height: 34rpx;
+  background-color: #e73833;
+  border-radius: 36rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #fff;
+}
+.button-item{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 0;
+}
+.button-item::after{
+  border: 0;
+}
+.order-item .order-icon{
+    text-align: center;
+    font-size: 60rpx;
+    color: #333;
+}
+.service-icon{
+    height: 72rpx;
+}
+.order-item .order-icon .van-icon-service-o{
+    top: -34rpx;
+}
+.order-item .order-text{
+    font-size: 24rpx;
+    text-align: center;
+    color: #333;
+    margin-top: -10rpx;
+}
+
+.service-box{
+    margin-top: 20rpx;
+}

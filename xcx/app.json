@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/address/address",
+    "pages/home/home",
+    "pages/confirm/confirm",
+    "pages/logist/logist",
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/content/content",
+    "pages/addDress/addDress",
+    "pages/mine/mine",
+    "pages/cart/cart",
+    "pages/login/login"
+  ],
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#333",
+    "list": [
+      {
+        "iconPath": "/assets/home.png",
+        "selectedIconPath": "/assets/ahome.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/assets/cart.png",
+        "selectedIconPath": "/assets/acart.png",
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "iconPath": "/assets/mine.png",
+        "selectedIconPath": "/assets/amine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "旺和铺子",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

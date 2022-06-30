@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "编辑收货地址",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-toast": "@vant/weapp/toast/index"
+  }
+}

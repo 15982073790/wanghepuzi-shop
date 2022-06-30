@@ -1,0 +1,21 @@
+{
+    "name":             "mrstock/business/middleware",
+    "description":      "middleware",
+    "keywords":         ["business,middleware"],
+    "homepage":         "http://www.guxiansheng.cn/",
+	"type": 			"library",
+    "license":          "MIT",
+    "version":          "v1.0",
+    "authors": [
+        {
+            "name":         "",
+            "email":        "",
+            "role":         ""
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "MrStock\\Business\\Middleware\\": "src"
+        }
+    }
+}

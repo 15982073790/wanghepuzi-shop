@@ -1,0 +1,24 @@
+{
+    "name":             "CxtCloud/Sdk",
+    "description":      "Sdk",
+    "keywords":         ["CxtCloud,Sdk"],
+    "homepage":         "http://www.guxiansheng.cn/",
+	"type": 			"library",
+    "license":          "MIT",
+    "version":          "v1.0",
+    "authors": [
+        {
+            "name":         "",
+            "email":        "",
+            "role":         ""
+        }
+    ],
+    "require": {
+        "nategood/httpful": "*"
+    },
+    "autoload" : {
+        "psr-4": {
+            "CxtCloud\\": "src"
+        }
+    }
+}

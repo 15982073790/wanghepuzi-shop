@@ -1,0 +1,54 @@
+<!--pages/cart/cart.wxml-->
+<view class="container gray-bg cart-container">
+  <view class="no-data-box" wx:if="{{list.length === 0}}">
+    <image src="../../assets/no-data.png" class="no-img" mode="widthFix"/>
+    <view class="tips">购物车还没有商品奥，快去添加吧~</view>
+  </view>
+  <view wx:else>
+    <!-- <van-checkbox-group value="{{ checkList }}" bind:change="singleChange"> -->
+    <van-radio-group value="{{ checkList }}" bind:change="singleChange">
+      <van-swipe-cell  wx:for="{{ list }}" wx:key="index" right-width="{{ 65 }}"  data-index="{{ index }}" data-id="{{ item.shop_cart_id }}" async-close bind:close="delete">
+        <view class="goods-item">
+          <view class="check-box">
+            <van-radio checked-color="#FF3200" class="checkboxes-{{ index }}" name="{{ item.shop_cart_id }}" />
+            <!-- <van-checkbox
+              checked-color="#FF3200"
+              catch:tap="noop"
+              name="{{ item.shop_cart_id }}"
+              label-disabled
+              class="checkboxes-{{ index }}"
+            /> -->
+          </view>
+          <navigator url="/pages/content/content?d={{item.goods_id}}" class="goods-img">
+            <image src="{{item.cover_img}}" mode="widthFix"/>
+          </navigator>
+          <view class="goods-tit">
+            <view class="title">{{item.goods_name}}</view>
+            <view class="desc">{{item.goods_name}}</view>
+            <view class="price">
+              <text class="l">¥{{item.goods_price}}</text>
+              <van-stepper button-size="20px" min="{{ item.minNum }}" value="{{ item.goods_count }}" bind:change="onChangeNum" data-ind="{{index}}" data-gd="{{item.goods_id}}"/>
+            </view>
+          </view>
+        </view>
+        <view class="delete" slot="right">删除</view>
+      </van-swipe-cell>
+    </van-radio-group>
+    <!-- </van-checkbox-group> -->
+  </view>
+
+  <view class="btn-submit">
+    <van-submit-bar
+      price="{{ total }}"
+      button-text="提交订单"
+      bind:submit="goPurchase"
+      tip="{{ true }}"
+    >
+      <!-- <van-checkbox value="{{ checkedAll }}" checked-color="#FF3200" bind:change="changeAll">全选</van-checkbox> -->
+    </van-submit-bar>
+  </view>
+
+  <van-toast id="van-toast" />
+  <van-dialog id="van-dialog" />
+</view>
+

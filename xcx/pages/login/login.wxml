@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<view class="container gray-bg login-container">
+  <!-- 表单 start -->
+  <view class="form">
+    <van-button round block type="info" color="#40a9ff" open-type="getUserInfo" bind:getuserinfo="login">微信授权登录</van-button>
+  </view>
+  <van-toast id="van-toast" />
+</view>

@@ -1,0 +1,24 @@
+{
+    "name":             "mrstock/system/orm",
+    "description":      "Orm",
+    "keywords":         ["orm"],
+    "homepage":         "https://www.guxiansheng.cn",
+	"type": 			"library",
+    "license":          "MIT",
+    "version":          "v1.0",
+    "authors": [
+        {
+            "name": "11",
+            "email": "11@aa.com",
+            "homepage": "https://www.guxiansheng.cn"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload" : {
+        "psr-4": {
+            "MrStock\\System\\Orm\\": "src"
+        }
+    }
+}

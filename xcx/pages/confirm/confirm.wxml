@@ -1,0 +1,54 @@
+<view class="container detail-container gray-bg">
+<wxs module="filter" src="../../utils/filter.wxs" />
+  <view class="address-box">
+    <view class="location">
+      <image src="../../assets/loc.png" mode="widthFix"/>
+    </view>
+    <navigator url="/pages/address/address?url=confirm">
+      <view wx:if="{{orderInfo.address}}" class="username"><text>{{userName}}</text>{{userTel}}</view>
+      <view wx:if="{{orderInfo.address}}" class="info">{{address}}</view>
+      <view wx:if="{{!orderInfo.address}}" class="select">请选择收货地址</view>
+    </navigator>
+    <van-icon class="arrow-icon icon" name="arrow" />
+  </view>
+  <view class="goods">
+    <view class="goods-item" wx:for="{{orderInfo.order_goods}}" wx:for-item="goodItem" wx:key="index">
+      <view class="goods-img">
+        <image src="{{goodItem.cover_img}}" mode="widthFix"/>
+      </view>
+      <view class="goods-tit">
+        <view class="title">{{goodItem.goods_name}}</view>
+        <view class="desc">{{goodItem.goods_describe}}</view>
+        <view class="price">
+          <text class="l">¥{{goodItem.goods_price}}</text>
+          <text>X{{goodItem.goods_count}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="other-item">
+      <text class="lef">商品总额</text>
+      <text class="rig">¥{{orderInfo.total_goods_price}}</text>
+    </view>
+    <view class="other-item">
+      <text class="lef">抵扣总额</text>
+      <text class="rig red">-¥{{orderInfo.total_coupon_price}}</text>
+    </view>
+    <view class="other-item">
+      <text class="lef">运费</text>
+      <text class="rig">¥{{orderInfo.total_area_price}}</text>
+    </view>
+    <view class="other-item">
+      <text class="lef">实付款</text>
+      <text class="rig red">¥{{orderInfo.total_pay_money}}</text>
+    </view>
+  </view>
+  <view class="time-box">
+    <view>订单编号：{{orderInfo.order_sn}} <text data-text="{{orderInfo.order_sn}}" bindtap='copyText'>复制</text></view>
+    <view>下单时间：{{filter.getDate(orderInfo.itime)}}</view>
+  </view>
+  <view class="btn">
+    <text class="gray">共 {{orderInfo.order_goods[0].goods_count}} 件，合计：</text><text class="red">¥{{orderInfo.total_pay_money}}</text>
+    <van-button size="small" round type="primary" color="#FF3200" bindtap="pay">立即支付</van-button>
+  </view>
+  <van-toast id="van-toast" />
+</view>

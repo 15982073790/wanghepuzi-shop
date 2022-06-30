@@ -1,0 +1,12 @@
+<?php
+
+namespace CxtCloud\{NAMESPACE};
+
+use CxtCloud\Client\Request\RpcRequest;
+
+
+class {CLASSNAME} extends RpcRequest
+{
+    
+	{OPS}
+}

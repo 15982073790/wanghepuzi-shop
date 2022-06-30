@@ -1,0 +1,17 @@
+<?php
+
+namespace CxtCloud\{NAMESPACE};
+
+use MrstockCloud\Client\Traits\VersionResolverTrait;
+
+/**
+ * Find the specified version of the {NAMESPACE} based on the method name as the version name.
+ *
+ * @package   CxtCloud\{NAMESPACE}
+ *
+{METHODS}
+ */
+class VersionResolver
+{
+    use VersionResolverTrait;
+}

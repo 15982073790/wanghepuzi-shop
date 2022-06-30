@@ -1,0 +1,15 @@
+<?php
+
+namespace MrstockCloud\{NAMESPACE};
+
+use MrstockCloud\Client\Traits\ApiResolverTrait;
+
+/**
+ * Resolve Api based on the method name.
+ *
+{METHODS}
+ */
+class ApiResolver
+{
+    use ApiResolverTrait;
+}

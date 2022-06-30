@@ -1,0 +1,17 @@
+<?php
+
+namespace MrstockCloud\{NAMESPACE};
+
+use MrstockCloud\Client\Traits\VersionResolverTrait;
+
+/**
+ * Find the specified version of the {NAMESPACE} based on the method name as the version name.
+ *
+ * @package   MrstockCloud\{NAMESPACE}
+ *
+{METHODS}
+ */
+class VersionResolver
+{
+    use VersionResolverTrait;
+}

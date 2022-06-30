@@ -1,0 +1,90 @@
+.content-container .swiper {
+  height: 860rpx;
+}
+.content-container .swiper .wx-swiper-dot {
+  bottom: 200rpx;
+}
+.content-container .goods-image {
+  width: 750rpx;
+  height: auto;
+}
+.content-container .main {
+  position: relative;
+  top: -80rpx;
+  padding-bottom: 20rpx;
+}
+.content-container .main .goods-info {
+  padding: 30rpx;
+  background-color: #fff;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+}
+.content-container .main .goods-info .top {
+  display: flex;
+  justify-content: space-between;
+  line-height: 70rpx;
+}
+.content-container .main .goods-info .top .price {
+  color: #FF3200;
+  font-size: 32rpx;
+}
+.content-container .main .goods-info .top .price text {
+  color: #CBCACA;
+  font-size: 24rpx;
+  text-decoration: line-through;
+  padding-left: 20rpx;
+}
+.content-container .main .goods-info .top .purchase {
+  color: #AEAEAE;
+  font-size: 26rpx;
+}
+.content-container .main .goods-info .title {
+  color: #333;
+  font-size: 30rpx;
+  height: 74rpx;
+  line-height: 37rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.content-container .main .goods-info .desc {
+  margin-top: 10rpx;
+  color: #666;
+  font-size: 26rpx;
+}
+.content-container .main .goods-info .number-box {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.content-container .main .goods-info .number-box text {
+  font-size: 24rpx;
+  line-height: 60rpx;
+  color: #666;
+}
+.content-container .main .desc-tit {
+  height: 110rpx;
+  line-height: 110rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 0 30rpx;
+}
+.content-container .main .desc-tit text {
+  display: inline-block;
+  height: 28rpx;
+  width: 6rpx;
+  border-radius: 2rpx;
+  background-color: #FF3200;
+  margin-right: 12rpx;
+}
+.content-container .main .info {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.content-container .main .info .info-image {
+  width: 750rpx;
+  height: auto;
+}

@@ -1,0 +1,22 @@
+// 使用var定义一个json开头 将所有的过滤器写在unit中
+function format(ts) {
+    ts = ts * 1000
+    var d = getDate(ts)
+    return [d.getFullYear(), formatNumber(d.getMonth()+1), formatNumber(d.getDate())].join('-') + ' ' + [formatNumber(d.getHours()), formatNumber(d.getMinutes()), formatNumber(d.getSeconds())].join(':')
+}
+
+function formatDay(ts) {
+    ts = ts * 1000
+    var d = getDate(ts)
+    return [d.getFullYear(), formatNumber(d.getMonth()+1), formatNumber(d.getDate())].join('-') + ''
+}
+
+function formatNumber(n){
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
+
+module.exports = {
+  getDate: format,
+  getDateDay: formatDay
+}

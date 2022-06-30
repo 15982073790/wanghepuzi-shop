@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "物流跟踪",
+  "usingComponents": {
+    "van-steps": "@vant/weapp/steps/index",
+    "van-toast": "@vant/weapp/toast/index"
+  }
+}

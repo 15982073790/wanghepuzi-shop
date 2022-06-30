@@ -1,0 +1,14 @@
+{
+  "name": "macfeng",
+  "version": "1.0.0",
+  "description": "旺和铺子",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.2.1"
+  }
+}

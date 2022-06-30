@@ -1,0 +1,85 @@
+.address-container{
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20rpx 0 0;
+  background-color: #fff;
+  position: relative;
+  .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx 40rpx;
+    border-bottom: 1px solid #F5F5F5;
+    .left{
+      flex: 1;
+      .user{
+        font-size: 32rpx;
+        color: #333;
+        text{
+          font-weight: 500;
+          padding-right: 20rpx;
+        }
+      }
+      .info{
+        margin-top: 20rpx;
+        color: #666;
+        line-height: 40rpx;
+        font-size: 26rpx;
+      }
+    }
+    .right{
+      width: 80rpx;
+      text-align: center;
+    }
+  }
+  .btn-add{
+    position: absolute;
+    width: 670rpx;
+    bottom: 54rpx;
+    left: 40rpx;
+    >button{
+      box-shadow: 0 0 12rpx rgba(70,123,253,0.58);
+    }
+  }
+}
+
+.delete{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.van-swipe-cell__left{
+  display: inline-block;
+  width: 65px;
+  height: 44px;
+  font-size: 15px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  background-color:rgb(84, 221, 84);
+}
+
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: 44px;
+  font-size: 15px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}
+
+.main-box{
+  padding-bottom: 200rpx;
+}
+.btn-bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: #fff;
+}

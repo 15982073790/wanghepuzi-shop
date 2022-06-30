@@ -1,0 +1,112 @@
+[01-Nov-2018 09:21:06 Asia/Shanghai] PHP Fatal error:  Class 'MrStock\Business\ServiceSdk\JsonRpc\Exception' not found in D:\Project\composer\mrstock\business\servicesdk\JsonRpc\trunk\src\RpcClient.php on line 221
+[01-Nov-2018 09:21:51 Asia/Shanghai] PHP Fatal error:  Class 'MrStock\Business\ServiceSdk\JsonRpc\Exception' not found in D:\Project\composer\mrstock\business\servicesdk\JsonRpc\trunk\src\RpcClient.php on line 221
+[01-Nov-2018 09:22:15 Asia/Shanghai] PHP Fatal error:  Class 'MrStock\Business\ServiceSdk\JsonRpc\Exception' not found in D:\Project\composer\mrstock\business\servicesdk\JsonRpc\trunk\src\RpcClient.php on line 221
+[01-Nov-2018 09:23:12 Asia/Shanghai] PHP Fatal error:  Class 'MrStock\Business\ServiceSdk\JsonRpc\Exception' not found in D:\Project\composer\mrstock\business\servicesdk\JsonRpc\trunk\src\RpcClient.php on line 221
+[01-Nov-2018 10:22:33 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'class not exists: app1' in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php:454
+Stack trace:
+#0 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('app1', Array)
+#1 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(100): MrStock\System\MJC\Container->make('app1', Array, false)
+#2 D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php(28): MrStock\System\MJC\Container::get('app1')
+#3 [internal function]: MrStock\System\MJC\Route\AC->__construct()
+#4 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(452): ReflectionClass->newInstanceArgs(Array)
+#5 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('MrStock\\System\\...', Array)
+#6 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(275): MrStock\System\MJC\Container->make('MrStock\\System\\...', Array, false)
+#7 D:\Project\composer\mrstock\sy in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php on line 454
+[01-Nov-2018 10:22:34 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'class not exists: app1' in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php:454
+Stack trace:
+#0 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('app1', Array)
+#1 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(100): MrStock\System\MJC\Container->make('app1', Array, false)
+#2 D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php(28): MrStock\System\MJC\Container::get('app1')
+#3 [internal function]: MrStock\System\MJC\Route\AC->__construct()
+#4 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(452): ReflectionClass->newInstanceArgs(Array)
+#5 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('MrStock\\System\\...', Array)
+#6 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(275): MrStock\System\MJC\Container->make('MrStock\\System\\...', Array, false)
+#7 D:\Project\composer\mrstock\sy in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php on line 454
+[01-Nov-2018 10:22:35 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'class not exists: app1' in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php:454
+Stack trace:
+#0 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('app1', Array)
+#1 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(100): MrStock\System\MJC\Container->make('app1', Array, false)
+#2 D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php(28): MrStock\System\MJC\Container::get('app1')
+#3 [internal function]: MrStock\System\MJC\Route\AC->__construct()
+#4 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(452): ReflectionClass->newInstanceArgs(Array)
+#5 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('MrStock\\System\\...', Array)
+#6 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(275): MrStock\System\MJC\Container->make('MrStock\\System\\...', Array, false)
+#7 D:\Project\composer\mrstock\sy in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php on line 454
+[01-Nov-2018 10:22:35 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'class not exists: app1' in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php:454
+Stack trace:
+#0 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('app1', Array)
+#1 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(100): MrStock\System\MJC\Container->make('app1', Array, false)
+#2 D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php(28): MrStock\System\MJC\Container::get('app1')
+#3 [internal function]: MrStock\System\MJC\Route\AC->__construct()
+#4 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(452): ReflectionClass->newInstanceArgs(Array)
+#5 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('MrStock\\System\\...', Array)
+#6 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(275): MrStock\System\MJC\Container->make('MrStock\\System\\...', Array, false)
+#7 D:\Project\composer\mrstock\sy in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php on line 454
+[01-Nov-2018 10:22:35 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'class not exists: app1' in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php:454
+Stack trace:
+#0 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('app1', Array)
+#1 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(100): MrStock\System\MJC\Container->make('app1', Array, false)
+#2 D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php(28): MrStock\System\MJC\Container::get('app1')
+#3 [internal function]: MrStock\System\MJC\Route\AC->__construct()
+#4 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(452): ReflectionClass->newInstanceArgs(Array)
+#5 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('MrStock\\System\\...', Array)
+#6 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(275): MrStock\System\MJC\Container->make('MrStock\\System\\...', Array, false)
+#7 D:\Project\composer\mrstock\sy in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php on line 454
+[01-Nov-2018 10:22:35 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'class not exists: app1' in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php:454
+Stack trace:
+#0 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('app1', Array)
+#1 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(100): MrStock\System\MJC\Container->make('app1', Array, false)
+#2 D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php(28): MrStock\System\MJC\Container::get('app1')
+#3 [internal function]: MrStock\System\MJC\Route\AC->__construct()
+#4 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(452): ReflectionClass->newInstanceArgs(Array)
+#5 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('MrStock\\System\\...', Array)
+#6 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(275): MrStock\System\MJC\Container->make('MrStock\\System\\...', Array, false)
+#7 D:\Project\composer\mrstock\sy in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php on line 454
+[01-Nov-2018 10:22:35 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'Exception' with message 'class not exists: app1' in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php:454
+Stack trace:
+#0 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('app1', Array)
+#1 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(100): MrStock\System\MJC\Container->make('app1', Array, false)
+#2 D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php(28): MrStock\System\MJC\Container::get('app1')
+#3 [internal function]: MrStock\System\MJC\Route\AC->__construct()
+#4 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(452): ReflectionClass->newInstanceArgs(Array)
+#5 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(278): MrStock\System\MJC\Container->invokeClass('MrStock\\System\\...', Array)
+#6 D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php(275): MrStock\System\MJC\Container->make('MrStock\\System\\...', Array, false)
+#7 D:\Project\composer\mrstock\sy in D:\Project\composer\mrstock\system\mjc\trunk\src\Container.php on line 454
+[01-Nov-2018 05:14:11 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 33
+[01-Nov-2018 05:27:22 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 33
+[01-Nov-2018 13:33:14 Asia/Shanghai] PHP Fatal error:  Call to undefined method MrStock\System\MJC\Route\AC::run() in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 35
+[01-Nov-2018 13:33:41 Asia/Shanghai] PHP Fatal error:  Call to undefined method MrStock\System\MJC\Route\AC::run() in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 35
+[01-Nov-2018 13:35:21 Asia/Shanghai] PHP Fatal error:  Function name must be a string in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 39
+[01-Nov-2018 13:35:22 Asia/Shanghai] PHP Fatal error:  Function name must be a string in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 39
+[01-Nov-2018 13:36:06 Asia/Shanghai] PHP Fatal error:  Call to a member function send() on null in D:\Project\web\public\index.php on line 20
+[01-Nov-2018 13:44:31 Asia/Shanghai] PHP Fatal error:  Call to a member function handle() on array in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 36
+[01-Nov-2018 13:45:20 Asia/Shanghai] PHP Fatal error:  Call to a member function handle() on array in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 36
+[01-Nov-2018 13:45:20 Asia/Shanghai] PHP Fatal error:  Call to a member function handle() on array in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 36
+[01-Nov-2018 13:45:26 Asia/Shanghai] PHP Fatal error:  Call to a member function handle() on array in D:\Project\composer\mrstock\system\mjc\trunk\src\App.php on line 36
+[01-Nov-2018 13:48:05 Asia/Shanghai] PHP Fatal error:  Call to a member function send() on null in D:\Project\web\public\index.php on line 20
+[01-Nov-2018 15:36:43 Asia/Shanghai] PHP Fatal error:  Call to a member function make() on null in D:\Project\composer\mrstock\system\mjc\trunk\src\Middleware.php on line 159
+[01-Nov-2018 15:37:33 Asia/Shanghai] PHP Fatal error:  Call to a member function make() on null in D:\Project\composer\mrstock\system\mjc\trunk\src\Middleware.php on line 160
+[01-Nov-2018 15:37:57 Asia/Shanghai] PHP Fatal error:  Call to a member function make() on null in D:\Project\composer\mrstock\system\mjc\trunk\src\Middleware.php on line 161
+[01-Nov-2018 15:38:05 Asia/Shanghai] PHP Fatal error:  Call to a member function make() on null in D:\Project\composer\mrstock\system\mjc\trunk\src\Middleware.php on line 162
+[01-Nov-2018 15:38:05 Asia/Shanghai] PHP Fatal error:  Call to a member function make() on null in D:\Project\composer\mrstock\system\mjc\trunk\src\Middleware.php on line 162
+[01-Nov-2018 15:38:06 Asia/Shanghai] PHP Fatal error:  Call to a member function make() on null in D:\Project\composer\mrstock\system\mjc\trunk\src\Middleware.php on line 162
+[01-Nov-2018 15:42:37 Asia/Shanghai] PHP Fatal error:  Declaration of MrStock\System\MJC\Filter::handle() must be compatible with MrStock\System\MJC\MiddlewareClassInterface::handle($request, Closure $next) in D:\Project\composer\mrstock\system\mjc\trunk\src\Filter.php on line 5
+[01-Nov-2018 15:43:21 Asia/Shanghai] PHP Fatal error:  Declaration of MrStock\System\MJC\Filter::handle() must be compatible with MrStock\System\MJC\MiddlewareClassInterface::handle($request, Closure $next) in D:\Project\composer\mrstock\system\mjc\trunk\src\Filter.php on line 5
+[01-Nov-2018 15:43:22 Asia/Shanghai] PHP Fatal error:  Declaration of MrStock\System\MJC\Filter::handle() must be compatible with MrStock\System\MJC\MiddlewareClassInterface::handle($request, Closure $next) in D:\Project\composer\mrstock\system\mjc\trunk\src\Filter.php on line 5
+[01-Nov-2018 15:46:48 Asia/Shanghai] PHP Fatal error:  Declaration of MrStock\System\MJC\Filter::handle() must be compatible with MrStock\System\MJC\MiddlewareClassInterface::handle($request, Closure $next) in D:\Project\composer\mrstock\system\mjc\trunk\src\Filter.php on line 5
+[01-Nov-2018 15:54:18 Asia/Shanghai] PHP Fatal error:  Cannot access protected property App\Control\IndexControl::$middleware in D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php on line 44
+[01-Nov-2018 15:54:44 Asia/Shanghai] PHP Fatal error:  Cannot access protected property App\Control\IndexControl::$middleware in D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php on line 44
+[01-Nov-2018 15:54:44 Asia/Shanghai] PHP Fatal error:  Cannot access protected property App\Control\IndexControl::$middleware in D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php on line 44
+[01-Nov-2018 15:54:53 Asia/Shanghai] PHP Fatal error:  Access level to App\Control\IndexControl::$middleware must be public (as in class MrStock\System\MJC\Control) in D:\Project\web\application\App\Control\IndexControl.php on line 22
+[01-Nov-2018 16:54:23 Asia/Shanghai] PHP Fatal error:  Call to undefined method MrStock\System\MJC\Route\AC::middleware() in D:\Project\composer\mrstock\system\mjc\trunk\src\Route\AC.php on line 43
+[01-Nov-2018 16:55:13 Asia/Shanghai] PHP Fatal error:  Class name must be a valid object or a string in D:\Project\composer\mrstock\system\mjc\trunk\src\Control.php on line 42
+[01-Nov-2018 16:56:18 Asia/Shanghai] PHP Fatal error:  Class name must be a valid object or a string in D:\Project\composer\mrstock\system\mjc\trunk\src\Control.php on line 42
+[01-Nov-2018 20:12:49 Asia/Shanghai] PHP Fatal error:  Class name must be a valid object or a string in D:\Project\composer\mrstock\system\mjc\trunk\src\Control.php on line 17
+[02-Nov-2018 09:08:51 Asia/Shanghai] PHP Parse error:  syntax error, unexpected '}' in D:\Project\web\application\App\Middleware\Auth.php on line 32
+[02-Nov-2018 09:25:07 Asia/Shanghai] PHP Fatal error:  Class 'App\Middleware\Output' not found in D:\Project\web\application\App\Middleware\Auth.php on line 32
+[02-Nov-2018 09:26:49 Asia/Shanghai] PHP Fatal error:  Class 'App\Control\aaa' not found in D:\Project\web\application\App\Control\IndexControl.php on line 27
+[02-Nov-2018 09:31:02 Asia/Shanghai] PHP Fatal error:  Class 'App\Control\aaa' not found in D:\Project\web\application\App\Control\IndexControl.php on line 27
+[02-Nov-2018 09:47:17 Asia/Shanghai] PHP Fatal error:  Class 'App\Control\aaa' not found in D:\Project\web\application\App\Control\IndexControl.php on line 27
+[02-Nov-2018 09:47:18 Asia/Shanghai] PHP Fatal error:  Class 'App\Control\aaa' not found in D:\Project\web\application\App\Control\IndexControl.php on line 27
+[02-Nov-2018 10:22:34 Asia/Shanghai] PHP Fatal error:  Class 'MrStock\Business\ServiceSdk\JsonRpc\Exception' not found in D:\Project\composer\mrstock\business\servicesdk\JsonRpc\trunk\src\RpcClient.php on line 221
+[02-Nov-2018 10:24:47 Asia/Shanghai] PHP Fatal error:  Class 'MrStock\Business\ServiceSdk\JsonRpc\Exception' not found in D:\Project\composer\mrstock\business\servicesdk\JsonRpc\trunk\src\RpcClient.php on line 221

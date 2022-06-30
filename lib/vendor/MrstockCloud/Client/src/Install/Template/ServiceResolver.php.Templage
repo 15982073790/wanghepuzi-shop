@@ -1,0 +1,22 @@
+<?php
+
+namespace MrstockCloud;
+
+use MrstockCloud\Client\MrstockCloud;
+use MrstockCloud\Client\Traits\ServiceResolverTrait;
+
+/**
+ * Find service based on the static method name as service name.
+ *
+ * @package   MrstockCloud
+ *
+ * @mixin     MrstockCloud
+ *
+ * @codeCoverageIgnore
+ *
+{METHODS}
+ */
+class ServiceResolver
+{
+    use ServiceResolverTrait;
+}
