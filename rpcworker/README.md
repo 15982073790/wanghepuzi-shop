@@ -1,6 +1,10 @@
 该项目是workerman-jsonrpc改来的,是用来启动各个服务
+启动的服务名/端口号/进程数在这里设置: 
+./Applications/Config.php
+每个服务代码放的位置为服务器固定位置
+/data/rpcwww
+具体查看 ./Applications/worker/start.php文件46行代码
 
-启动
 以debug（调试）方式启动
 
 php start.php start
